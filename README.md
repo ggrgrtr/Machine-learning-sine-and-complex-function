@@ -34,6 +34,8 @@ x1, x2 ... xn -> Neuron[ w1*x1 + w2*x2 + ... + wn*xn +b ] -> Z -> Activation() -
 <img width="766" height="194" alt="image" src="https://github.com/user-attachments/assets/a5ea4ca0-f991-49b6-abfa-1734f54975b5" />
 
 
+
 Для реализации Градиентного спуска, устанавления слоев нейронов и обновления весов я использовал библиотеку PyTorch
+
 А для визуализации - matplotlib
 
