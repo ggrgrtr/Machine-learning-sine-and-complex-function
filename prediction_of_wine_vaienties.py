@@ -115,6 +115,7 @@ y_min, y_max = x_train[:, 1].min() - 1, x_train[:, 1].max() + 1
 xx, yy = torch.meshgrid(torch.arange(x_min, x_max, plot_step),
                         torch.arange(y_min, y_max, plot_step))
 
+# SOFTMAX определения вероятности для визуализации
 preds = net.inference(
     torch.cat([xx.reshape(-1, 1), yy.reshape(-1, 1)], dim=1))
 
@@ -132,3 +133,4 @@ for i, color in zip(range(n_classes), plot_colors):
     plt.xlabel(wine.feature_names[0])
     plt.ylabel(wine.feature_names[1])
     plt.legend()
+
