@@ -69,6 +69,7 @@ class WineNet(torch.nn.Module):
 net = WineNet(5)
 
 loss_f = torch.nn.CrossEntropyLoss()  # Ф. потерь: кросс-энтропия
+# Метод оптимизации адам
 method_of_grad_steps = torch.optim.Adam(net.parameters(), lr=1.0e-3)
 
 batch_size = 10  # куча - 10 эл.
@@ -133,4 +134,5 @@ for i, color in zip(range(n_classes), plot_colors):
     plt.xlabel(wine.feature_names[0])
     plt.ylabel(wine.feature_names[1])
     plt.legend()
+
 
