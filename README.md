@@ -43,7 +43,10 @@ x1, x2 ... xn -> Neuron[ w1*x1 + w2*x2 + ... + wn*xn +b ] -> Z -> Activation() -
 
 А для визуализации - matplotlib
 
+
+
 **Предсказание функции синуса:**
+
 <img width="703" height="269" alt="image" src="https://github.com/user-attachments/assets/7762f1e2-dd01-4801-aaa6-b9795d67fa0b" />
 
 
